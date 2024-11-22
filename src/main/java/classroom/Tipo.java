@@ -1,11 +1,12 @@
 package classroom;
 
 public enum Tipo {
-    DISCIPLINAR(10), FUNDAMENTACION(20), ELECTIVA(30);
-
-    private int codigo;
-
-    Tipo(int codigo) { // Constructor simplificado
-        this.codigo = codigo;
-    }
+	DISCIPLINAR(10, "Disciplinar"),FUNDAMENTACION(20, "Fundamentacion"),ELECTIVA(30, "Electiva");
+	
+	private int codigo;
+	private String nombre;
+	private Tipo(int codigo,String nombre) {
+		this.codigo = codigo;
+		this.nombre = nombre;
+	}
 }
